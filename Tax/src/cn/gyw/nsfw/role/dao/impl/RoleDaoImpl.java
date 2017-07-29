@@ -1,0 +1,21 @@
+package cn.gyw.nsfw.role.dao.impl;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.hibernate.Query;
+
+import cn.gyw.core.dao.impl.BaseDaoImpl;
+import cn.gyw.nsfw.role.dao.RoleDao;
+import cn.gyw.nsfw.role.entity.Role;
+
+public class RoleDaoImpl extends BaseDaoImpl<Role> implements RoleDao {
+
+	public void deleteRolePrivilegeByRoleId(String roleId) {
+		Query query=getSession().createQuery("DELETE FROM RolePrivilege WHERE id.role.roleId=?");
+		query.setParameter(0, roleId);
+		query.executeUpdate();
+	}
+	
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Tax"
+  id="myeclipse.1490615394288"
+  context-root="/Tax"
+  j2ee-spec="5.0"
+  archive="Tax.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
